@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let form = document.querySelector("form");
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    handleToDo(e.target.new-task-description.value);
+    handleToDo(e.target["new-task-description"].value);
     form.reset();
   })
 });
